@@ -32,8 +32,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
-import { Mark, Styles } from './typings'
+import { defineComponent } from 'vue'
+import type { PropType } from 'vue'
+import type { Mark, Styles } from './typings'
 
 import './styles/mark.scss';
 

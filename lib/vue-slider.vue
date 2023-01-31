@@ -102,10 +102,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
+import { defineComponent } from 'vue'
+import type { PropType } from 'vue'
 import VueSliderDot from './vue-slider-dot.vue'
 import VueSliderMark from './vue-slider-mark.vue'
-import {
+import type {
   Value,
   DataObject,
   MarksProp,
@@ -119,10 +120,12 @@ import {
   TooltipProp,
   TooltipFormatter,
 } from './typings'
-import { getSize, getPos, getKeyboardHandleFunc, HandleFunction } from './utils'
+import { getSize, getPos, getKeyboardHandleFunc } from './utils'
+import type { HandleFunction } from './utils'
 import Decimal from './utils/decimal'
 import Control, { ERROR_TYPE } from './utils/control'
-import State, { StateMap } from './utils/state'
+import State from './utils/state'
+import type { StateMap }  from './utils/state'
 
 import './styles/slider.scss'
 
